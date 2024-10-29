@@ -1,18 +1,18 @@
-﻿using ClearBank.DeveloperTest.Types;
+﻿using ClearBank.DeveloperTest.Data.Base;
+using ClearBank.DeveloperTest.Types;
 
-namespace ClearBank.DeveloperTest.Data
+namespace ClearBank.DeveloperTest.Data;
+
+public class BackupAccountDataStore : IDataStore
 {
-    public class BackupAccountDataStore
+    public Account GetAccount(string accountNumber)
     {
-        public Account GetAccount(string accountNumber)
-        {
-            // Access backup data base to retrieve account, code removed for brevity 
-            return new Account();
-        }
+        // Access backup data base to retrieve account, code removed for brevity 
+        return new Account();
+    }
 
-        public void UpdateAccount(Account account)
-        {
-            // Update account in backup database, code removed for brevity
-        }
+    public void UpdateAccount(Account account)
+    {
+        // Update account in backup database, code removed for brevity
     }
 }
